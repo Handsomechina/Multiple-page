@@ -1,0 +1,14 @@
+diff --git a/node_modules/worker-loader/dist/index.js b/node_modules/worker-loader/dist/index.js
+index 7adb3b7..d096367 100644
+--- a/node_modules/worker-loader/dist/index.js
++++ b/node_modules/worker-loader/dist/index.js
+@@ -67,7 +67,8 @@ function pitch(request) {
+ 
+   const cb = this.async();
+ 
+-  const filename = _loaderUtils2.default.interpolateName(this, options.name || '[hash].worker.js', {
++  // const filename = _loaderUtils2.default.interpolateName(this, options.name || '[hash].worker.js', {
++  const filename = _loaderUtils2.default.interpolateName(this, options.name || 'static/js/[hash].worker.js', {
+     context: options.context || this.rootContext || this.options.context,
+     regExp: options.regExp
+   });
